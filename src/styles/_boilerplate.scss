@@ -6,7 +6,8 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-button {
+button,
+li {
   all: unset;
 }
 
@@ -33,12 +34,6 @@ a:visited {
 }
 
 body {
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
-
   min-height: 100vh;
   margin: 0;
   padding: 0;
@@ -48,6 +43,12 @@ body {
   color: var(--color-light-100);
 
   background-color: var(--color-dark-900);
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
 }
 
 // To ensure that Input fields are not the default color when selecting from a list of previously entered values.
