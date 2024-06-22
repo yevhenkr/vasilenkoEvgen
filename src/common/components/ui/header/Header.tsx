@@ -1,16 +1,29 @@
-import { Link } from 'react-router-dom'
-
 import s from '@/common/components/ui/header/header.module.scss'
 
 import { Button } from '../button/button'
-import { Typography } from '../typography/typography'
+// import { Typography } from '../typography/typography'
 
 export const Header = () => {
   return (
     <header className={s.root}>
-      <div className={s.content}>
-        <Typography as={'p'}></Typography>
-        <Button as={Link} to={'/login'} variant={'primary'} />
+      <div>
+        {/*<Typography as={'p'}></Typography>*/}
+        <nav>
+          <ul className={s.content}>
+            <li>
+              <Button variant={'empty'}>Main</Button>
+            </li>
+            <li>
+              <Button variant={'empty'}>Skills</Button>
+            </li>
+            <li>
+              <Button variant={'empty'}>Project</Button>
+            </li>
+            <li>
+              <Button variant={'empty'}>Contacts</Button>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
   )
