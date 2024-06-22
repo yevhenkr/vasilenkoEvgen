@@ -1,3 +1,9 @@
+import { Header } from '../common/components/ui/header/Header'
+
 export function App() {
-  return <div>Hello world</div>
+  return (
+    <div>
+      <Header />
+    </div>
+  )
 }
