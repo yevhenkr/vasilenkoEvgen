@@ -1,5 +1,5 @@
 import { CssIcon } from '@/assets/icons/cssIcon'
-import { GitHubIcon, GitIcon } from '@/assets/icons/gitHubIcon'
+import { GitHubIcon } from '@/assets/icons/gitHubIcon'
 import { HtmlIcon } from '@/assets/icons/htmlIcon'
 import { JSIcon } from '@/assets/icons/jsIcon'
 import { ReactIcon } from '@/assets/icons/reactIcon'
