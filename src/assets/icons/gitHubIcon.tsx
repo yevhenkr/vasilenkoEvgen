@@ -1,6 +1,6 @@
 import { memo } from 'react'
 
-export const GitIcon = memo(() => (
+export const GitHubIcon = memo(() => (
   <svg height={'50px'} viewBox={'0 0 24 24'} xmlns={'http://www.w3.org/2000/svg'}>
     <mask height={'24'} id={'lineMdGithubLoop0'} width={'24'} x={'0'} y={'0'}>
       <g fill={'#fff'}>
