@@ -9,7 +9,7 @@ import { RestApiIcon } from '@/assets/icons/restApiIcon'
 import { StoryBookIcon } from '@/assets/icons/storyBookIcon'
 import { TSIcon } from '@/assets/icons/tsIcon'
 import { Skill } from '@/common/components/ui/skills/skillItem/Skill'
-import { TitleSection } from '@/common/components/ui/titleSections/titleSection'
+import { TitleSection } from '@/common/components/ui/titleSections/TitleSection'
 
 import gs from '../../../../app/app.module.scss'
 import s from './skills.module.scss'
@@ -18,7 +18,7 @@ export const Skills = () => {
   return (
     <section className={`${gs.section} ${s.skillsBlock}`}>
       <div className={`${gs.container}`}>
-        <TitleSection />
+        <TitleSection title={'Skills'} />
         <div className={s.skills}>
           <Skill icon={<TSIcon />} title={'TypeScript'} />
           <Skill icon={<JSIcon />} title={'JavaScript'} />
