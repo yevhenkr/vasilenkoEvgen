@@ -16,6 +16,9 @@ export const ProjectItem = (props: SkillProps) => {
     <div className={s.project}>
       <div className={s.imgContainer}>
         <img alt={'Cards'} className={s.img} src={props.icon} />
+        <Button as={Link} className={s.button} to={props.projLink} variant={'secondary'}>
+          VIEW PROJECT
+        </Button>
       </div>
       <div className={s.projectInfo}>
         <h3>{props.projName}</h3>
@@ -27,7 +30,7 @@ export const ProjectItem = (props: SkillProps) => {
             to={props.projLink}
             variant={'empty'}
           >
-            Project
+            Website
           </Button>
           <Button
             as={Link}
