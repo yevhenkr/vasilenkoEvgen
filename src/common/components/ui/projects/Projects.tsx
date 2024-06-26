@@ -7,8 +7,6 @@ import s from './projects.module.scss'
 import cardsProjImg from '../../../../assets/img/cards.png'
 import simpleFoodImg from '../../../../assets/img/simpleFood.png'
 
-// import cards from '../../../../assets/img/cards.png'
-
 export const Projects = () => {
   return (
     <section className={`${gs.section} ${s.projectsBlock}`}>
