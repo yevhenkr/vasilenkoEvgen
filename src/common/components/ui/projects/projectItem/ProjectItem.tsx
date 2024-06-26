@@ -2,28 +2,39 @@ import { Link } from 'react-router-dom'
 
 import { Button } from '@/common/components/ui/button'
 
-// import gs from '../../../../app/app.module.scss'
-// import s from './projectItem.module.scss'
+import s from './projectItem.module.scss'
 
-import cards from '../../../../../assets/img/cards.png'
-
-export const ProjectItem = () => {
+type SkillProps = {
+  codeLink: string
+  icon: string
+  projDescription: string
+  projLink: string
+  projName: string
+}
+export const ProjectItem = (props: SkillProps) => {
   return (
-    <div>
-      <div>
-        <img alt={'Cards'} className={''} src={cards} />
+    <div className={s.project}>
+      <div className={s.imgContainer}>
+        <img alt={'Cards'} className={s.img} src={props.icon} />
       </div>
-      <div>
-        <h3>Cards</h3>
-        <span>
-          The app is designed for question-and-answer card-based learning, with the ability to
-          create your own decks of cards or use existing sets.
-        </span>
-        <div>
-          <Button as={Link} to={'https://cards-for-study.vercel.app/login'} variant={'empty'}>
+      <div className={s.projectInfo}>
+        <h3>{props.projName}</h3>
+        <span className={s.description}>{props.projDescription}</span>
+        <div className={s.links}>
+          <Button
+            as={Link}
+            className={`${s.btnLink} ${s.link}`}
+            to={props.projLink}
+            variant={'empty'}
+          >
             Project
           </Button>
-          <Button as={Link} to={'https://github.com/MrEvgeniy1989/cards'} variant={'empty'}>
+          <Button
+            as={Link}
+            className={`${s.btnLink} ${s.link}`}
+            to={props.codeLink}
+            variant={'empty'}
+          >
             Code
           </Button>
         </div>
