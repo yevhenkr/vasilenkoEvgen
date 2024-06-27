@@ -10,8 +10,10 @@ export const Main = () => {
         <h2>I'm Vasilenko Evgen</h2>
         <h3>WEB Developer</h3>
       </div>
-      <div>
-        <img className={s.img} src={my} />
+      <div className={s.photoWrapper}>
+        <div>
+          <img className={s.img} src={my} />
+        </div>
       </div>
     </section>
   )
