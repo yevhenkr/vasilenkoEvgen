@@ -1,8 +1,11 @@
 .mainContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  column-gap: 20px;
   align-items: center;
-  padding-top: 50px;
+  justify-content: center;
+
+  padding: 150px 0 100px;
 }
 
 .title {
@@ -16,5 +19,5 @@
 }
 
 .img {
-  height: 300px;
+  height: 400px;
 }
