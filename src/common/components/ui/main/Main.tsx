@@ -7,7 +7,7 @@ export const Main = () => {
   return (
     <section className={`${gs.container} ${s.mainContainer}`} id={'Main'}>
       <div className={s.title}>
-        <h2>I am Vasilenko Evgen</h2>
+        <h2>I'm Vasilenko Evgen</h2>
         <h3>WEB Developer</h3>
       </div>
       <div>
