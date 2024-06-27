@@ -1,7 +1,6 @@
 import s from '@/common/components/ui/header/header.module.scss'
 
-import { Button } from '../button/button'
-// import { Typography } from '../typography/typography'
+// import { Typography } from './typography/typography'
 
 export const Header = () => {
   return (
@@ -11,16 +10,16 @@ export const Header = () => {
         <nav>
           <ul className={s.content}>
             <li>
-              <Button variant={'empty'}>Main</Button>
+              <a href={'#Main'}>Main</a>
             </li>
             <li>
-              <Button variant={'empty'}>Skills</Button>
+              <a href={'#Skills'}>Skills</a>
             </li>
             <li>
-              <Button variant={'empty'}>Project</Button>
+              <a href={'#Projects'}>Projects</a>
             </li>
             <li>
-              <Button variant={'empty'}>Contacts</Button>
+              <a href={'#footer'}>Contacts</a>
             </li>
           </ul>
         </nav>

@@ -9,7 +9,7 @@ import simpleFoodImg from '../../../../assets/img/simpleFood.png'
 
 export const Projects = () => {
   return (
-    <section className={`${gs.section} ${s.projectsBlock}`}>
+    <section className={`${gs.section} ${s.projectsBlock}`} id={'Projects'}>
       <div className={`${gs.container} ${s.container}`}>
         <TitleSection title={'Projects'} />
         <div className={s.projects}>

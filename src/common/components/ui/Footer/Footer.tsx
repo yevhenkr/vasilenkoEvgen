@@ -4,7 +4,7 @@ import s from './footer.module.scss'
 
 export const Footer = () => {
   return (
-    <footer className={s.footer}>
+    <footer className={s.footer} id={'footer'}>
       <div className={s.container}>
         <TitleSection className={s.footerTitle} title={'Evgenii Vasilenko'} />
         <div className={s.socialIcons}>

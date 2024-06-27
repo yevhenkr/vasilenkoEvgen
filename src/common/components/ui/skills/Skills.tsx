@@ -16,7 +16,7 @@ import s from './skills.module.scss'
 
 export const Skills = () => {
   return (
-    <section className={`${gs.section} ${s.skillsBlock}`}>
+    <section className={`${gs.section} ${s.skillsBlock}`} id={'Skills'}>
       <div className={`${gs.container}`}>
         <TitleSection title={'Skills'} />
         <div className={s.skills}>
