@@ -1,11 +1,11 @@
 import { Button } from '@/common/components/ui/button'
-
-import s from '@/common/components/ui/header/header.module.scss'
+import { myTheme } from '@/styles/Theme.styled'
+import styled from 'styled-components'
 
 export const Menu = () => {
   return (
-    <nav role={'menu'}>
-      <ul className={s.content}>
+    <StyledMenu role={'menu'}>
+      <ul>
         <li>
           <Button as={'a'} href={'#Main'} variant={'secondary'}>
             Main
@@ -27,10 +27,20 @@ export const Menu = () => {
           </Button>
         </li>
       </ul>
-    </nav>
+    </StyledMenu>
   )
 }
 
-// const StyledMenu = styled.nav`
-//   color: #ff8099;
-// `
+const StyledMenu = styled.nav`
+  color: ${myTheme.color.white};
+  ul {
+    display: flex;
+    column-gap: 10px;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+`
