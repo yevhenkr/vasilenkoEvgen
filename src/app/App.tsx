@@ -1,4 +1,4 @@
-import { Footer } from '@/common/components/ui/Footer/Footer'
+import { Footer } from '@/common/components/ui/footer/Footer'
 import { Main } from '@/common/components/ui/main/Main'
 import { Projects } from '@/common/components/ui/projects/Projects'
 import { Skills } from '@/common/components/ui/skills/Skills'
