@@ -33,6 +33,7 @@ export const Menu = () => {
 
 const StyledMenu = styled.nav`
   color: ${myTheme.color.white};
+
   ul {
     display: flex;
     column-gap: 10px;
