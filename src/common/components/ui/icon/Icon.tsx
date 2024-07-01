@@ -3,6 +3,7 @@ import iconsSprite from '../../../../assets/icons/sprite.svg'
 type PropsType = {
   height?: string
   iconId: string
+  iconId2?: string
   viewBox?: string
   weight?: string
 }
@@ -15,6 +16,7 @@ export const Icon = (props: PropsType) => {
       width={props.weight || '30'}
     >
       <use xlinkHref={`${iconsSprite}#${props.iconId}`} />
+      {props.iconId2 ? <use xlinkHref={`${iconsSprite}#${props.iconId2}`} /> : ''}
     </svg>
   )
 }

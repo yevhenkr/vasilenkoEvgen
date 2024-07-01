@@ -1,14 +1,14 @@
-import SocialMediaSprite from '@/common/components/ui/footer/footerSocialMedia/socialMediaSprite'
+import { Icon } from '@/common/components/ui/icon/Icon'
 import styled from 'styled-components'
 
 const FooterSocialMedia = () => {
   return (
     <StyleDiv>
-      <SocialMediaSprite spriteId={'telegram'} />
-      <SocialMediaSprite spriteId={'linkedIn'} />
-      <SocialMediaSprite spriteId={'codeWars'} />
-      <SocialMediaSprite spriteId={'gitHub'} />
-      <SocialMediaSprite spriteId={'email1'} spriteId2={'email2'} viewBox={'0 0 60 60'} />
+      <Icon iconId={'telegram'} />
+      <Icon iconId={'linkedIn'} />
+      <Icon iconId={'codeWars'} />
+      <Icon iconId={'gitHub'} />
+      <Icon iconId={'email1'} iconId2={'email2'} viewBox={'0 0 60 60'} />
     </StyleDiv>
   )
 }
