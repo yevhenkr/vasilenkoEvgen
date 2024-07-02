@@ -6,7 +6,7 @@ import my from '../../../assets/img/myPhoto.jpg'
 export const Main = () => {
   return (
     <StyledMain id={'Main'}>
-      <FlexWrapper alignI={'center'} justifyC={'space-around'}>
+      <FlexWrapper align_i={'center'} justify={'space-around'}>
         <div>
           <MaineTitle>I'm Vasilenko Evgen</MaineTitle>
           <StyledName>WEB Developer</StyledName>
