@@ -25,7 +25,7 @@ const StyledPhoto = styled.div`
     margin-right: 3%;
 
     img {
-        height: 430px;
+        height: 600px;
     }
 
     &::before {
@@ -36,8 +36,8 @@ const StyledPhoto = styled.div`
         top: -20px;
         left: 20px;
 
-        width: 330px;
-        height: 470px;
+        width: 450px;
+        height: 640px;
 
         border: 5px solid var(--color-info-500);
 
@@ -50,6 +50,9 @@ const StyledPhoto = styled.div`
 `
 const StyledMain = styled.div`
   min-height: 100vh;
+  display: flex;
+  justify-content: center; /* Вирівнювання по центру горизонтально */
+  align-items: center;
 `
 const StyledName = styled.h2``
 const MaineTitle = styled.h1``
