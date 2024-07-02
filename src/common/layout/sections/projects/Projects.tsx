@@ -1,5 +1,5 @@
-import { ProjectItem } from '@/common/components/ui/projects/projectItem/ProjectItem'
 import { TitleSection } from '@/common/components/ui/titleSections/TitleSection'
+import { ProjectItem } from '@/common/layout/sections/projects/projectItem/ProjectItem'
 
 import gs from '../../../../app/app.module.scss'
 import s from './projects.module.scss'

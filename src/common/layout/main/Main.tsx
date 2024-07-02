@@ -1,7 +1,7 @@
-import gs from '../../../../app/app.module.scss'
+import gs from '../../../app/app.module.scss'
 import s from './main.module.scss'
 
-import my from '../../../../assets/img/myPhoto.jpg'
+import my from '../../../assets/img/myPhoto.jpg'
 
 export const Main = () => {
   return (

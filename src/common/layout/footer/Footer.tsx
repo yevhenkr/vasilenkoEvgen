@@ -1,5 +1,5 @@
-import FooterSocialMedia from '@/common/components/ui/footer/footerSocialMedia/footerSocialMedia'
 import { TitleSection } from '@/common/components/ui/titleSections/TitleSection'
+import FooterSocialMedia from '@/common/layout/footer/footerSocialMedia/footerSocialMedia'
 import styled from 'styled-components'
 
 export const Footer = () => {

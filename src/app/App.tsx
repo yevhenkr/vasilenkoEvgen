@@ -1,11 +1,10 @@
-import { Footer } from '@/common/components/ui/footer/Footer'
-import { Main } from '@/common/components/ui/main/Main'
-import { Projects } from '@/common/components/ui/projects/Projects'
-import { Skills } from '@/common/components/ui/skills/Skills'
+import { Footer } from '@/common/layout/footer/Footer'
+import { Header } from '@/common/layout/header/Header'
+import { Main } from '@/common/layout/main/Main'
+import { Projects } from '@/common/layout/sections/projects/Projects'
+import { Skills } from '@/common/layout/sections/skills/Skills'
 
 import s from './app.module.scss'
-
-import { Header } from '../common/components/ui/header/Header'
 
 export function App() {
   return (
