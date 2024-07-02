@@ -10,13 +10,10 @@ type FlexWrapperType = {
 
 export const FlexWrapper = styled.div<FlexWrapperType>`
   display: flex;
+  height: 100%;
   flex-direction: ${props => props.flexDirection || 'row'};
   justify-content: ${props => props.justify || 'flex-start'};
-  align-items: ${props => {
-    console.log(props.align_i)
-
-    return props.align_i || 'stretch'
-  }};
+  align-items: ${props => props.align_i || 'stretch'};
   flex-wrap: ${props => props.wrap || 'nowrap'};
   gap: ${props => props.gap || '10px'};
 `

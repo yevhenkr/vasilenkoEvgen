@@ -4,7 +4,6 @@ import styled from 'styled-components'
 
 type SkillProps = {
   icon: ReactElement
-  text: string
   title: string
 }
 
@@ -13,17 +12,17 @@ export const Skill = (props: SkillProps) => {
     <StyledSkill>
       <StyledIcon>{props.icon}</StyledIcon>
       <StyledTitle>{props.title}</StyledTitle>
-      <StyledText>{props.text}</StyledText>
+      {/*<StyledText>{props.text}</StyledText>*/}
     </StyledSkill>
   )
 }
 
 const StyledSkill = styled.div`
   align-items: center;
+  justify-content: center;
   display: flex;
   flex-direction: column;
   width: 30%;
-  background-color: rgba(255, 255, 255, 0.54);
 `
 const StyledIcon = styled.div`
   transform: rotate(45deg);
@@ -53,4 +52,3 @@ const StyledTitle = styled.h3`
   letter-spacing: 0.05em;
   margin: 0;
 `
-const StyledText = styled.p``
