@@ -9,17 +9,14 @@ import { RestApiIcon } from '@/assets/icons/restApiIcon'
 import { StoryBookIcon } from '@/assets/icons/storyBookIcon'
 import { TSIcon } from '@/assets/icons/tsIcon'
 import { FlexWrapper } from '@/common/components/ui/flexWrapper/FlexWrapper'
-import { SelectionTitle, TitleSection } from '@/common/components/ui/titleSections/TitleSection'
+import { TitleSection } from '@/common/components/ui/titleSections/TitleSection'
 import { Skill } from '@/common/layout/sections/skills/skillItem/Skill'
 import styled from 'styled-components'
-
-import gs from '../../../../app/app.module.scss'
 
 export const Skills = () => {
   return (
     <StyledSkills id={'Skills'}>
       <TitleSection title={'Skills'} />
-      <SelectionTitle className={`${gs.container}`} />
       <FlexWrapper justify={'space-between'} wrap={'wrap'}>
         <Skill icon={<TSIcon />} text={'text text text'} title={'TypeScript'} />
         <Skill icon={<JSIcon />} text={'text text text'} title={'JavaScript'} />
