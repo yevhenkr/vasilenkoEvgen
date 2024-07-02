@@ -34,6 +34,8 @@ export const Projects = () => {
 }
 
 const ProjectSection = styled.section`
+  padding: 100px 0;
+
   background-color: black;
   display: flex;
   flex-direction: column;
@@ -44,7 +46,7 @@ const ItemsWrapper = styled.div`
   flex-wrap: wrap;
   gap: 30px;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: space-around;
 
   @media screen and (width <= 719px) {
     justify-content: center;
