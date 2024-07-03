@@ -3,36 +3,54 @@ import styled from 'styled-components'
 
 const FooterSocialMedia = () => {
   return (
-    <StyleDiv>
-      <a href={'https://t.me/VasilenkoEvgen'} rel={'noreferrer'} target={'_blank'}>
-        <Icon iconId={'telegram'} />
-      </a>
-      <a
-        href={'https://www.linkedin.com/in/yevhen-vasilenko-0a2171161/'}
-        rel={'noreferrer'}
-        target={'_blank'}
-      >
-        <Icon iconId={'linkedIn'} />
-      </a>{' '}
-      <a href={'https://www.codewars.com/users/yevhenkr'} rel={'noreferrer'} target={'_blank'}>
-        <Icon iconId={'codeWars'} />
-      </a>
-      <a href={'https://github.com/yevhenkr'} rel={'noreferrer'} target={'_blank'}>
-        <Icon iconId={'gitHub'} />{' '}
-      </a>
-      <a href={'mailto:vasilenkoevgen88@gmail.com'} rel={'noreferrer'} target={'_blank'}>
-        <Icon iconId={'email1'} iconId2={'email2'} viewBox={'0 0 60 60'} />{' '}
-      </a>
-    </StyleDiv>
+    <SocialList>
+      <SocialItem>
+        <SocialLink href={'https://t.me/VasilenkoEvgen'} rel={'noreferrer'}>
+          <Icon iconId={'telegram'} />
+        </SocialLink>
+      </SocialItem>
+
+      <SocialItem>
+        <SocialLink
+          href={'https://www.linkedin.com/in/yevhen-vasilenko-0a2171161/'}
+          rel={'noreferrer'}
+        >
+          <Icon iconId={'linkedIn'} />
+        </SocialLink>
+      </SocialItem>
+
+      <SocialItem>
+        <SocialLink href={'https://www.codewars.com/users/yevhenkr'} rel={'noreferrer'}>
+          <Icon iconId={'codeWars'} />
+        </SocialLink>
+      </SocialItem>
+
+      <SocialItem>
+        <SocialLink href={'https://github.com/yevhenkr'} rel={'noreferrer'}>
+          <Icon iconId={'gitHub'} />{' '}
+        </SocialLink>
+      </SocialItem>
+
+      <SocialItem>
+        <SocialLink href={'mailto:vasilenkoevgen88@gmail.com'} rel={'noreferrer'}>
+          <Icon iconId={'email1'} iconId2={'email2'} viewBox={'0 0 60 60'} />{' '}
+        </SocialLink>
+      </SocialItem>
+    </SocialList>
   )
 }
 
 export default FooterSocialMedia
 
-const StyleDiv = styled.div`
+const SocialList = styled.ul`
   display: flex;
   flex-direction: row;
   gap: 20px;
   justify-content: center;
   width: 100%;
+  padding-left: 0;
+`
+const SocialItem = styled.li``
+const SocialLink = styled.a`
+  target: blank;
 `
