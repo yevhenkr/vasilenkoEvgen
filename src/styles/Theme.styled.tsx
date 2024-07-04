@@ -1,9 +1,9 @@
 export const myTheme = {
   color: {
-    black: '#07253C',
-    blue: '#4581F6',
-    navy: '#002265',
-    textColor: '#14279B',
+    black: 'black',
+    green: 'green',
+    red: 'red',
+    white: 'white',
   },
 
   media: {
