@@ -4,24 +4,24 @@ import styled from 'styled-components'
 
 export const Menu = () => {
   return (
-    <StyledMenu role={'menu'}>
-      <ul>
-        <li>
+    <StyledMenu>
+      <ul role={'menu'}>
+        <li role={'menuitem'}>
           <Button as={'a'} href={'#Main'} variant={'secondary'}>
             Main
           </Button>
         </li>
-        <li>
+        <li role={'menuitem'}>
           <Button as={'a'} href={'#Skills'} variant={'secondary'}>
             Skills
           </Button>
         </li>
-        <li>
+        <li role={'menuitem'}>
           <Button as={'a'} href={'#Projects'} variant={'secondary'}>
             Projects
           </Button>
         </li>
-        <li>
+        <li role={'menuitem'}>
           <Button as={'a'} href={'#footer'} variant={'secondary'}>
             Contacts
           </Button>

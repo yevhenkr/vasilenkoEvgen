@@ -12,7 +12,7 @@ export const Main = () => {
           <StyledName>WEB Developer</StyledName>
         </div>
         <StyledPhoto>
-          <img src={my} />
+          <img alt={'Photo developer'} src={my} />
         </StyledPhoto>
       </FlexWrapper>
     </StyledMain>
