@@ -1,3 +1,5 @@
+import Tilt from 'react-parallax-tilt'
+
 import { FlexWrapper } from '@/common/components/ui/flexWrapper/FlexWrapper'
 import styled from 'styled-components'
 
@@ -11,9 +13,11 @@ export const Main = () => {
           <MaineTitle>I'm Vasilenko Evgen</MaineTitle>
           <StyledName>WEB Developer</StyledName>
         </div>
-        <StyledPhoto>
-          <img alt={'Photo developer'} src={my} />
-        </StyledPhoto>
+        <Tilt>
+          <StyledPhoto>
+            <img alt={'Photo developer'} src={my} />
+          </StyledPhoto>
+        </Tilt>
       </FlexWrapper>
     </StyledMain>
   )
