@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 import cardsProjImg from '../../../../assets/img/cards.png'
 import simpleFoodImg from '../../../../assets/img/simpleFood.png'
+import thirdPortfolioImg from '../../../../assets/img/thirdPortfolio.webp'
 
 export const Projects = () => {
   return (
@@ -27,6 +28,15 @@ export const Projects = () => {
           }
           projLink={'https://simpel-food.vercel.app/'}
           projName={'Simple Food'}
+        />
+        <ProjectItem
+          codeLink={'https://github.com/yevhenkr/portfolio-third-variant'}
+          icon={thirdPortfolioImg}
+          projDescription={
+            'The app is designed for question-and-answer card-based learning, with the ability to'
+          }
+          projLink={'https://portfolio-third-variant.vercel.app/'}
+          projName={'Portfolio'}
         />
       </ItemsWrapper>
     </ProjectSection>
